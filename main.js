@@ -1,6 +1,6 @@
 const nav = document.querySelector('#header nav')
 const toggle = document.querySelectorAll('nav .toggle')
-// ESTUDAR ESTE TIPO DE 'FOR'
+
 for (const element of toggle) {
   element.addEventListener('click', function () {
     nav.classList.toggle('show')
@@ -9,7 +9,7 @@ for (const element of toggle) {
 
 const links = document.querySelectorAll('nav ul li a')
 
-// ESTUDAR ESTE TIPO DE 'FOR'
+
 for (const link of links) {
   link.addEventListener('click', function () {
     nav.classList.remove('show')
@@ -102,18 +102,4 @@ window.addEventListener('scroll', function () {
   }
 })
 
-/*
-ESSE CODIGO SUBSTITUI A CLASSE CONTAINER PELA CLASSE SHOW E QUANDO ABRE E FECHA O MENU, O LAYOUT QUEBRA PORQUE A CLASSE CONTAINER DESAPARECE.
---- codigo errado(quebrado) ---
-let open = document.getElementsByClassName('icon-menu')[0];
-let close = document.getElementsByClassName('icon-close')[0];
-let nav = document.getElementsByTagName('nav')[0];
 
-open.addEventListener('click', function () {
-  nav.setAttribute('class', 'show');
-});
-
-close.addEventListener('click', function () {
-  nav.removeAttribute('class', 'show');
-});
-*/
